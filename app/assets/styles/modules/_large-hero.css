@@ -1,0 +1,146 @@
+.large-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    &__image {
+        grid-column: 1;
+        grid-row: 1;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__text-content {
+        align-self: start;
+        grid-column: 1;
+        grid-row: 1;
+        text-align: start;
+        margin-left: 10px;
+
+        @mixin atSmall {
+            margin-left: 20px;
+        }
+
+        @mixin atMedium {
+            text-align: end;
+            margin-right: 10px;
+        }
+
+        @mixin atMidLarge {
+            margin-right: 20px;
+        }
+
+        @mixin atLarge {
+            margin-right: 40px;
+        }
+    }
+
+    &__title {
+        font-weight: 900;
+        color: $darkBlue;
+        font-size: 1.75rem;
+
+        @mixin atSmall {
+            font-size: 2rem;
+        }
+
+        @mixin atMedium {
+            color: $myPink;
+        }
+
+        @mixin atMidLarge {
+            font-size: 2.75rem;
+        }
+
+        @mixin atLarge {
+            font-size: 5rem;
+            text-shadow: 3px 3px $darkBlue;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        color: $myPink;
+        font-size: 1.2rem;
+
+        @mixin atSmall {
+            font-size: 1.5rem;
+        }
+
+        @mixin atMedium {
+            color: $darkBlue;
+            font-size: 1.3rem;
+        }
+
+        @mixin atMidLarge {
+            font-size: 1.75rem;
+            color: $midBlue;
+        }
+
+        @mixin atLarge {
+            font-size: 2.5rem;
+            color: $myPink;
+            text-shadow: 2px 2px $darkBlue;
+        }
+    }
+
+    &__description {
+        color: $midBlue;
+        font-size: .9rem;
+        font-weight: 500;
+        max-width: 10rem;
+        margin-right: auto;
+
+        @mixin atSmall {
+            font-size: 1.1rem;
+        }
+
+        @mixin atMedium {
+            margin-left: auto;
+            margin-right: 10px;
+        }
+
+        @mixin atMidLarge {
+            font-size: 1.2rem;
+            color: $darkBlue;
+            max-width: 15rem;
+        }
+
+        @mixin atLarge {
+            font-size: 1.5rem;
+            color: $myPink;
+            text-shadow: 2px 2px $darkBlue;
+            max-width: 20rem;
+        }
+    }
+
+    &__btn {
+        background-color: $myRed;
+        color: $darkBlue;
+        font-weight: 500;
+        text-decoration: none;
+        padding: .5rem .8rem;
+        display: inline-block;
+        margin-top: 50px;
+
+        @mixin atMedium {
+            margin-top: 15px;
+        }
+
+        @mixin atMidLarge {
+            font-size: 1.2rem;
+        }
+
+        @mixin atLarge {
+            background-color: $brightBlue;
+        }
+    }
+
+    &__btn:hover {
+        background-color: $darkBlue;
+        color: $brightBlue;
+        font-size: 1.2rem;
+    }
+}
+

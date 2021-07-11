@@ -32,20 +32,26 @@
     </header>
 
     <div class="large-hero">
-      <img src="assets/images/hero_image_1280x460.jpg">
+      
+      <picture class="large-hero__image">
+        <source srcset="assets/images/hero_image_1920x1080.jpg" media="(min-width: 930px)">
+        <source srcset="assets/images/hero_image_940x441.PNG" media="(min-width: 600px)">
+        <img src="assets/images/hero_image_600x480.jpg" alt="Arthur and Marvin">
+      </picture>
+
       <div class="large-hero__text-content">
-        <h1>The Galaxy awaits.</h1>
-        <h2>The Handkirchief is coming.</h2>
-        <p>We will give you the answer to Life, the Universe, and everything.</p>
-        <p><a href="#">Hitch a Ride Today</a></p>
+        <h1 class="large-hero__title">The Galaxy awaits.</h1>
+        <h2 class="large-hero__subtitle">The Handkirchief is coming.</h2>
+        <p class="large-hero__description">We will give you the answer to Life, the Universe, and everything.</p>
+        <p><a href="#" class="large-hero__btn">Hitch a Ride</a></p>
       </div>
     </div>
 
     <div id="our-beginning">
       <h2>Our first trip was a total coincidence.</h2>
       <h3>Our chance to meet was 2 to the power of 207946034 against 1.</h3>
-      <img src="assets/images/the_crew_1600x900.JPG" alt="The Hitchhiker's Guid to the Galaxy actors.">
-      <img src="assets/images/the_president_700x840.jpg" alt="The President of the Galaxy, Zaphod Beeblebrox">
+      <img src="assets/images/trip_image_1280x460.jpg" alt="A colorful drawing of a galactic scenery.">
+      <img src="assets/images/the-hitchhikers_1024x1821.jpg" alt="The Hitchhiker's Guid to the Galaxy actors.">
       <h2>About our crew</h2>
       <p>Our President is Zaphod Beeblebrox, also the President of the Galaxy. He was voted &ldquo;Worst dressed Sentient Being in the Known Universe&rdquo; seven consecutive times. His brain is fuelled by lemons, but has good hunches.</p>
       <p>Ford Prefect is from a planet in the vicinity of Betelgeuse, and a semi half cousin of Zaphod Beeblebrox. They share three of the same mothers, and both favor the Pan Galactic Gargle Blaster. Marvin is a robot with an exceptionally large brain, and built in GPP, which stands for Genuine People Personality. He is always happy and eager to help. Or is he? Arthur Dent is an Englishman, who happened to be friends with Ford Prefect, who happened to choose to take Arthur to the Galactic ride. Tricia McMillan, or Trillian, which sound more spacey, is also a human, who happened to meet Arthur and Zaphod at the same fancy dress party on Earth, but choose to check out Zaphod&lsquo;s spaceship instead.</p>
