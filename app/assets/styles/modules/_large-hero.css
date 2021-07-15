@@ -32,7 +32,12 @@
         }
 
         @mixin atLarge {
-            margin-right: 40px;
+            margin-right: 50px;
+        }
+
+        @mixin atVeryLarge {
+            margin-right: 100px;
+            margin-top: 200px;
         }
     }
 
@@ -134,6 +139,7 @@
 
         @mixin atLarge {
             background-color: $brightBlue;
+            font-size: 1.5rem;
         }
     }
 
