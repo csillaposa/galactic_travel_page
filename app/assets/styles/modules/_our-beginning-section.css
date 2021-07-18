@@ -1,0 +1,88 @@
+.our-beginning-section {
+    margin-top: -32px;
+    background-color: $brightBlue;
+    color: $darkBlue;
+
+    &__h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.6rem;
+        padding-top: 2.4rem;
+
+        @mixin atMedium {
+            font-size: 2rem;
+        }
+
+        @mixin atLarge {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__h3 {
+        text-align: center;
+        padding: .5rem;
+
+        @mixin atMedium {
+            font-size: 1.2rem;
+        }
+
+        @mixin atLarge {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__trip-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+
+    &__crew-part {
+        display: grid;
+
+        @mixin atMedium {
+            grid-template-columns: 1fr 2fr;
+            padding-bottom: .6rem;
+        }
+
+        @mixin atVeryLarge {
+            max-width: 1312px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__text-content h2 {
+        font-size: 1.7rem;
+
+        @mixin atLarge {
+            font-size: 2.3rem;
+        }
+
+        @mixin atVeryLarge {
+            font-size: 3rem;
+            font-weight: 900;
+        }
+    }
+
+    &__text-content {
+        padding: 1rem;
+        font-weight: 500;
+
+        @mixin atLarge {
+            font-size: 1.3rem;
+        }
+
+        @mixin atVeryLarge {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__crew-image {
+        @mixin atVeryLarge {
+            padding-left: 1rem;
+            padding-top: .8rem;
+        }
+    }
+}

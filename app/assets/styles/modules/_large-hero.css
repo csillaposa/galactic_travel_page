@@ -127,10 +127,9 @@
         text-decoration: none;
         padding: .5rem .8rem;
         display: inline-block;
-        margin-top: 50px;
 
         @mixin atMedium {
-            margin-top: 15px;
+           
         }
 
         @mixin atMidLarge {
