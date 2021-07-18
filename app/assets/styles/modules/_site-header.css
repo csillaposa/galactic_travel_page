@@ -1,0 +1,56 @@
+.site-header {
+    background-color: $myOrange;
+
+    &__header-content {
+        max-width: 80rem;
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 8rem;
+        height: auto;
+        margin-bottom: -3rem;
+        z-index: 2;
+    }
+
+    &__menu-content {
+        display: flex;
+    }
+
+    &__btn-container {
+        align-self: center;
+        order: 2;
+    }
+
+    &__btn {
+        display: inline-block;
+        background-color: $darkBlue;
+        color: $myOrange;
+        font-weight: 500;
+        text-decoration: none;
+        padding: .5rem .8rem;
+    }
+
+    &__btn:hover {
+        background-color: $midBlue;
+        color: $brightBlue;
+        font-size: 1.2rem;
+    }
+
+    &__nav li {
+        list-style: none;
+        display: inline;
+    }
+
+    &__nav a {
+        text-decoration: none;
+        color: $darkBlue;
+        font-weight: 500;
+        padding-right: 10px;
+    }
+}

@@ -51,7 +51,7 @@
         }
 
         @mixin atMedium {
-            color: $myPink;
+            color: $myOrange;
         }
 
         @mixin atMidLarge {
@@ -66,7 +66,7 @@
 
     &__subtitle {
         font-weight: 700;
-        color: $myPink;
+        color: $myOrange;
         font-size: 1.2rem;
 
         @mixin atSmall {
@@ -85,7 +85,7 @@
 
         @mixin atLarge {
             font-size: 2.5rem;
-            color: $myPink;
+            color: $myOrange;
             text-shadow: 2px 2px $darkBlue;
         }
     }
@@ -114,14 +114,14 @@
 
         @mixin atLarge {
             font-size: 1.5rem;
-            color: $myPink;
+            color: $myOrange;
             text-shadow: 2px 2px $darkBlue;
             max-width: 20rem;
         }
     }
 
     &__btn {
-        background-color: $myRed;
+        background-color: $myOrange;
         color: $darkBlue;
         font-weight: 500;
         text-decoration: none;
