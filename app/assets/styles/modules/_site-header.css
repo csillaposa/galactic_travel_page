@@ -12,10 +12,16 @@
     }
 
     &__logo {
-        width: 8rem;
+        width: 4rem;
         height: auto;
-        margin-bottom: -3rem;
+        margin-bottom: -4px;
         z-index: 2;
+
+        @mixin atMedium {
+            width: 8rem;
+            height: auto;
+            margin-bottom: -3rem;
+        }
     }
 
     &__menu-content {
@@ -52,5 +58,10 @@
         color: $darkBlue;
         font-weight: 500;
         padding-right: 10px;
+    }
+
+    &__nav a:hover {
+        text-decoration: underline;
+        font-weight: 700;
     }
 }
