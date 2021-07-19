@@ -1,0 +1,70 @@
+.features {
+    margin-top: -4px;
+    background-color: $midBlue;
+    color: $darkBlue;
+
+    &__title {
+        display: flex;
+
+        @mixin atMidLarge {
+            justify-content: center;
+        }
+    }
+
+    &__title-img {
+        display: block;
+        width: auto;
+        height: 5.6rem;
+        margin-right: 1rem;
+    }
+
+    &__title-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $myOrange;
+    }
+
+    &__items {
+        display: grid;
+        justify-content: center;
+
+        @mixin atMidLarge {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1.5rem;
+        }
+
+        @mixin atVeryLarge {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__item {
+        background-color: $myOrange;
+        margin-bottom: 1.5rem;
+    }
+
+    &__item-img-title {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    &__item img {
+        display: block;
+        width: auto;
+        height: 3.3rem;
+        margin-right: 1rem;
+    }
+
+    &__item h3 {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    &__item p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0 1rem;
+    }
+}
