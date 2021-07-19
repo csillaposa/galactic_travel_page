@@ -41,7 +41,7 @@
     }
 
     &__item {
-        background-color: $myOrange;
+        background-color: $myOrangeTransp;
         margin-bottom: 1.5rem;
     }
 

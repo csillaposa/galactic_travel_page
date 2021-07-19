@@ -1,0 +1,57 @@
+.testimonials {
+    background-color: $brightBlue;
+    margin-top: -1.65rem;
+
+    &__title {
+        color: $darkBlue;
+        padding-top: 2rem;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    &__content {
+        display: grid;
+
+        @mixin atMedium {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1.5rem;
+        }
+
+        @mixin atVeryLarge {
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0 1.5rem;
+        }
+    }
+
+    &__item {
+        background-color: $midBlueTransp;
+        margin-bottom: 1.5rem;
+    }
+
+    &__item-img-person {
+        display: flex;        
+    }
+
+    &__item-img-person img {
+        display: block;
+        height: 6rem;
+        width: auto;
+        border-radius: 50%;
+        margin: 1.5rem 1rem 0 1rem;
+    }
+
+    &__item-person h3 {
+        font-size: 1.7rem;
+    }
+
+    &__item-person h4 {
+        font-size: 1.3rem;
+    }
+
+    &__item p {
+        padding: 0 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
