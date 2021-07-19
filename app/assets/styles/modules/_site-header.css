@@ -2,7 +2,6 @@
     background-color: $myOrange;
 
     &__header-content {
-        max-width: 80rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
