@@ -1,0 +1,23 @@
+footer {
+    background-color: $myOrange;
+    padding: 1.5rem;
+    text-align: center;
+    color: $darkBlue;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    a {
+        background-color: $midBlue;
+        color: $myOrange;
+        font-weight: 500;
+        text-decoration: none;
+        padding: .5rem .8rem;
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    a:hover {
+        background-color: $brightBlue;
+        color: $darkBlue;
+    }
+} 
