@@ -53,6 +53,10 @@
         background-color: $midBlue;
         color: $brightBlue;
         font-size: 1.2rem;
+
+        @mixin atLarge {
+            font-size: 2rem;
+        }
     }
 
     &__nav li {
