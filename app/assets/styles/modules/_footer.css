@@ -4,7 +4,10 @@ footer {
     text-align: center;
     color: $darkBlue;
     font-size: 1.2rem;
-    font-weight: 700;
+
+    p {
+        font-weight: 700;
+    }
 
     a {
         background-color: $darkBlue;
