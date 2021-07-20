@@ -21,6 +21,7 @@
             width: 8rem;
             height: auto;
             margin-bottom: -3rem;
+            margin-left: 1rem;
         }
     }
 
@@ -42,6 +43,7 @@
         font-family: 'Bangers', cursive;
         text-decoration: none;
         padding: .5rem .8rem;
+        border-radius: 50%;
 
         @mixin atLarge {
             font-size: 2rem;
