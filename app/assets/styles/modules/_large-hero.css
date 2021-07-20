@@ -146,11 +146,6 @@
     &__btn:hover {
         background-color: $darkBlue;
         color: $brightBlue;
-        font-size: 1.2rem;
-
-        @mixin atVeryLarge {
-            font-size: 1.7rem;
-        }
     }
 }
 
