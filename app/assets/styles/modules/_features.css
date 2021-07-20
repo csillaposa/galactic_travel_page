@@ -5,6 +5,7 @@
 
     &__title {
         display: flex;
+        font-family: 'Bangers', cursive;
 
         @mixin atMidLarge {
             justify-content: center;
@@ -61,7 +62,7 @@
     &__item h3 {
         display: block;
         font-size: 1.5rem;
-        font-weight: 700;
+        font-family: 'Bangers', cursive;
     }
 
     &__item p {

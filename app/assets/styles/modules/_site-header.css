@@ -39,7 +39,7 @@
         background-color: $darkBlue;
         color: $myOrange;
         font-size: 1.2rem;
-        font-weight: 500;
+        font-family: 'Bangers', cursive;
         text-decoration: none;
         padding: .5rem .8rem;
 
@@ -71,7 +71,7 @@
     &__nav a {
         text-decoration: none;
         color: $darkBlue;
-        font-weight: 500;
+        font-family: 'Bangers', cursive;
         padding-right: 10px;
     }
 

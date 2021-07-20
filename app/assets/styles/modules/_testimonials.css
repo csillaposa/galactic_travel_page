@@ -6,7 +6,7 @@
         color: $darkBlue;
         padding-top: 2rem;
         text-align: center;
-        font-weight: 700;
+        font-family: 'Bangers', cursive;
         font-size: 2rem;
     }
 
@@ -27,6 +27,7 @@
     &__item {
         background-color: $midBlueTransp;
         margin-bottom: 1.5rem;
+        color: $darkBlue;
     }
 
     &__item-img-person {
@@ -43,6 +44,7 @@
 
     &__item-person h3 {
         font-size: 1.7rem;
+        font-family: 'Bangers', cursive;
     }
 
     &__item-person h4 {
