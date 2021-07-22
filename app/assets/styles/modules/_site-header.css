@@ -26,11 +26,39 @@
     }
 
     &__menu-icon {
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
         width: 20px;
-        height: 20px;
-        background-color: $darkBlue;
-        margin-right: 1rem;
-        
+        height: 19px;
+
+        /*creating the bars*/
+        &__top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background-color: $darkBlue;
+        }
+
+        &__middle {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background-color: $darkBlue;
+        }
+
+        &__bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background-color: $darkBlue;
+        }
 
         @mixin atMidLarge {
             display: none;
@@ -41,6 +69,10 @@
         display: none;
 
         @mixin atMidLarge {
+            display: flex;
+        }
+
+        &--is-visible {
             display: flex;
         }
     }
@@ -78,8 +110,12 @@
 
     &__nav li {
         list-style: none;
-        display: inline;
+        display: grid;
         font-size: 1.2rem;
+
+        @mixin atMidLarge {
+            display: inline;
+        }
 
         @mixin atLarge {
             font-size: 2rem;
@@ -98,3 +134,5 @@
         font-weight: 700;
     }
 }
+
+/*everything I change in CSS for the Burger Menu, applies to smaller screens, so I need to adjust it back with mixins for larger screens */
