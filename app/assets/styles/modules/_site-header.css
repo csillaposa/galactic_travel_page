@@ -25,8 +25,24 @@
         }
     }
 
+    &__menu-icon {
+        width: 20px;
+        height: 20px;
+        background-color: $darkBlue;
+        margin-right: 1rem;
+        
+
+        @mixin atMidLarge {
+            display: none;
+        }
+    }
+
     &__menu-content {
-        display: flex;
+        display: none;
+
+        @mixin atMidLarge {
+            display: flex;
+        }
     }
 
     &__btn-container {
@@ -35,7 +51,7 @@
         margin-right: 1rem;
     }
 
-    &__btn {
+     &__btn {
         display: inline-block;
         background-color: $darkBlue;
         color: $myOrange;
