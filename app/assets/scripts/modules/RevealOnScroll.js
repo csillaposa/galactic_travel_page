@@ -1,15 +1,20 @@
+import { throttle } from "lodash";
+
 class RevealOnScroll {
     constructor () {
         this.itemsToReveal = document.querySelectorAll(".features__item");
         this.hideInitially();
+        this.scrollThrottle = throttle(this.calcCaller, 200).bind(this);
         this.events();
     }
 
     events() {
-        window.addEventListener("scroll", () => {
-            this.itemsToReveal.forEach(el => {
-                this.calculateIfScrolledTo(el);
-            });
+        window.addEventListener("scroll", this.scrollThrottle)
+    }
+
+    calcCaller() {
+        this.itemsToReveal.forEach(el => {
+            this.calculateIfScrolledTo(el);
         });
     }
 
