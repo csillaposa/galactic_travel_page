@@ -3,6 +3,7 @@ import { throttle } from "lodash";
 class RevealOnScroll {
     constructor () {
         this.itemsToReveal = document.querySelectorAll(".features__item");
+        this.browserHeight = window.innerHeight;
         this.hideInitially();
         this.scrollThrottle = throttle(this.calcCaller, 200).bind(this);
         this.events();
@@ -21,8 +22,8 @@ class RevealOnScroll {
     }
 
     calculateIfScrolledTo(el) {
-        if (window.scrollY + window.innerHeight > el.offsetTop) {
-            let scrollPercent = (el.getBoundingClientRect().y / window.innerHeight) * 100;
+        if (window.scrollY + this.browserHeight > el.offsetTop) {
+            let scrollPercent = (el.getBoundingClientRect().y / this.browserHeight) * 100;
             if (scrollPercent < 75) {
                 el.classList.add("reveal-item--is-visible");
                 el.isRevealed = true;
