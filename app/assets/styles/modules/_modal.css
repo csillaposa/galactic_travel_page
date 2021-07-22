@@ -1,4 +1,6 @@
 .modal {
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -8,6 +10,11 @@
     z-index: 5;
     display: flex;
     color: $darkBlue;
+
+    &--is-visible {
+        opacity: 1;
+        visibility: visible;
+    }
 
     &__inner {
         margin: auto;
