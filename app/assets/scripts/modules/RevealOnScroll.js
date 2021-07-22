@@ -21,12 +21,14 @@ class RevealOnScroll {
     }
 
     calculateIfScrolledTo(el) {
-        let scrollPercent = (el.getBoundingClientRect().y / window.innerHeight) * 100;
-        if (scrollPercent < 75) {
-            el.classList.add("reveal-item--is-visible");
-            el.isRevealed = true;
-            if (el.isLastItem) {
-                window.removeEventListener("scroll", this.scrollThrottle);
+        if (window.scrollY + window.innerHeight > el.offsetTop) {
+            let scrollPercent = (el.getBoundingClientRect().y / window.innerHeight) * 100;
+            if (scrollPercent < 75) {
+                el.classList.add("reveal-item--is-visible");
+                el.isRevealed = true;
+                if (el.isLastItem) {
+                    window.removeEventListener("scroll", this.scrollThrottle);
+                }
             }
         }
     }
