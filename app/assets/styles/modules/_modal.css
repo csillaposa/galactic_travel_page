@@ -1,0 +1,95 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $myOrangeTransp;
+    z-index: 5;
+    display: flex;
+    color: $darkBlue;
+
+    &__inner {
+        margin: auto;
+    }
+
+    &__inner-title-img {
+        display: flex;
+        justify-content: center;
+
+        h2 {
+            font-family: 'Bangers', cursive;
+            font-size: 1.2rem;
+
+            @mixin atMedium {
+                font-size: 2rem;
+            }
+
+            @mixin atMidLarge {
+                font-size: 3rem;
+            }
+        }
+
+        img {
+            height: 2em;
+            width: auto;
+
+            @mixin atMedium {
+                height: 3rem;
+                width: auto;
+            }
+
+            @mixin atMidLarge {
+                height: 4rem;
+                width: auto;
+            }
+        }
+    }
+
+    &__description {
+        text-align: center;
+        font-weight: 500;
+        margin: 0 1rem;
+
+        @mixin atMedium {
+            font-size: 1.2rem;
+            max-width: 30rem;
+        }
+
+        @mixin atMidLarge {
+            font-size: 1.5rem;
+        }
+
+    }
+
+    &__social-icons {
+        text-align: center;
+
+        &__icon {
+            display: inline-block;
+            margin: 3rem 1rem;
+
+            &:hover {
+                background-color: $brightBlue;
+            }
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        transform: scaleX(1.2);
+        transform-origin: 100% 0;
+        color: $darkBlue;
+        cursor: pointer;
+
+        &:hover {
+            color: $brightBlue;
+        }
+
+        @mixin atMedium {
+            font-size: 2rem;
+        }
+    }
+}
