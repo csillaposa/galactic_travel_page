@@ -14,6 +14,7 @@ class BurgerMenu {
         //which will appear and disappear (toggle) when clicked
         //so we can add extra styling for these elements
         this.menuContent.classList.toggle("site-header__menu-content--is-visible");
+        this.menuIcon.classList.toggle("site-header__menu-icon--close-x");
     }
 }
 
