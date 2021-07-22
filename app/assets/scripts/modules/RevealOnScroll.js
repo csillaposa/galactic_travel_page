@@ -14,20 +14,24 @@ class RevealOnScroll {
 
     calcCaller() {
         this.itemsToReveal.forEach(el => {
-            this.calculateIfScrolledTo(el);
-        });
+            if (el.isRevealed == false) {
+                this.calculateIfScrolledTo(el);
+            }
+        }); 
     }
 
     calculateIfScrolledTo(el) {
         let scrollPercent = (el.getBoundingClientRect().y / window.innerHeight) * 100;
         if (scrollPercent < 75) {
             el.classList.add("reveal-item--is-visible");
+            el.isRevealed = true;
         }
     }
 
     hideInitially() {
         this.itemsToReveal.forEach(el => {
             el.classList.add("reveal-item");
+            el.isRevealed = false;
         });
     }
 }
