@@ -1,4 +1,5 @@
 import { throttle } from "lodash";
+import { debounce } from "lodash";
 
 class RevealOnScroll {
     constructor () {
@@ -10,7 +11,10 @@ class RevealOnScroll {
     }
 
     events() {
-        window.addEventListener("scroll", this.scrollThrottle)
+        window.addEventListener("scroll", this.scrollThrottle);
+        window.addEventListener("resize", debounce(() => {
+            this.browserHeight = window.innerHeight;
+        }, 333));
     }
 
     calcCaller() {
