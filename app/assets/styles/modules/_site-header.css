@@ -1,5 +1,12 @@
 .site-header {
     background-color: $myOrange;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+
+    @mixin atMidLarge {
+        position: fixed;
+    }
 
     &__header-content {
         display: flex;
