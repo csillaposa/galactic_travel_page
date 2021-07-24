@@ -170,6 +170,13 @@
         color: $darkBlue;
         font-family: 'Bangers', cursive;
         padding-right: 10px;
+
+        @mixin atMidLarge {
+            &.is-current-link {
+                text-decoration: underline;
+                font-weight: 700;
+            }
+        }
     }
 
     &__nav a:hover {
