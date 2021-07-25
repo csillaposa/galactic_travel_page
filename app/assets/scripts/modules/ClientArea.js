@@ -1,4 +1,4 @@
-import axios from "axios";
+import Axios from "axios";
 
 class ClientArea {
     constructor() {
@@ -20,7 +20,7 @@ class ClientArea {
     //to communicate with the cloud function
     sendRequest() {
         //axios request results in a PROMISE
-        axios.post('https://awesome-roentgen-df94b5.netlify.app/.netlify/functions/secret-area', {password: this.field.value}).then(response => {
+        Axios.post('https://awesome-roentgen-df94b5.netlify.app/.netlify/functions/secret-area', {password: this.field.value}).then(response => {
             this.form.remove();
             this.contentArea.innerHTML = response.data;
         }).catch(() => {
@@ -40,7 +40,7 @@ class ClientArea {
         </form>
         <div class="client-area__content-area"></div>
         </div>
-        `)
+        `);
     }
 }
 
