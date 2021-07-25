@@ -33,7 +33,7 @@ class ClientArea {
     injectHTML() {
         document.body.insertAdjacentHTML('beforeend', `
         <div class="client-area">
-        <h2 class="section-title">Secret Client Area</h2>
+        <h2 class="client-area__section-title">Secret Client Area</h2>
         <form class="client-area__form" action="">
           <input class="client-area__input" type="text" placeholder="Enter the secret phrase">
           <button class="client-area__btn">Submit</button>
