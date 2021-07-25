@@ -3,11 +3,13 @@ import 'lazysizes';
 import BurgerMenu from './modules/BurgerMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
+import ClientArea from './modules/ClientArea';
 
 new BurgerMenu();
 new RevealOnScroll(document.querySelectorAll(".features__item"), 75);
 new RevealOnScroll(document.querySelectorAll(".testimonials__item"), 60);
 new StickyHeader();
+new ClientArea();
 
 let modal;
 
