@@ -24,10 +24,15 @@
 
 
         @mixin atMedium {
-            width: 4rem;
-            height: auto;
+            width: auto;
+            height: 4rem;
+            margin-top: .5rem;
             margin-bottom: -1rem;
             margin-left: 1rem;
+        }
+
+        @mixin atLarge {
+            height: 5rem;
         }
     }
 
