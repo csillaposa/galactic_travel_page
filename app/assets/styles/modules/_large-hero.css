@@ -16,28 +16,29 @@
         grid-column: 1;
         grid-row: 1;
         text-align: start;
-        margin-left: 10px;
+        margin-left: .625rem;
 
         @mixin atSmall {
-            margin-left: 20px;
+            margin-left: 1.25rem;
         }
 
         @mixin atMedium {
             text-align: end;
-            margin-right: 10px;
+            margin-right: .625rem;
         }
 
         @mixin atMidLarge {
-            margin-right: 20px;
+            margin-top: 2rem;
+            margin-right: 1.25rem;
         }
 
         @mixin atLarge {
-            margin-right: 50px;
+            margin-right: 3.125rem;
         }
 
         @mixin atVeryLarge {
-            margin-right: 100px;
-            margin-top: 200px;
+            margin-right: 6.25rem;
+            margin-top: 6.25rem;
         }
     }
 
