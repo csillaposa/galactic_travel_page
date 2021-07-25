@@ -1,4 +1,5 @@
 import '../styles/styles.css';
+import 'lazysizes';
 import BurgerMenu from './modules/BurgerMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
